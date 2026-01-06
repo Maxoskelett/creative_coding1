@@ -1,0 +1,28 @@
+body {
+    background-color: #000000;
+}
+img 
+{
+    width: 30px;
+    height: 30px;
+    position:absolute;
+    left: 200px;
+    top: 200px;
+    transition: opacity 1s;
+    animation: starAnimation 1s infinite;
+}
+img.hover
+{
+    opacity: 1;
+}
+@keyframes starAnimation {
+    0% { 
+        opacity: 0.3;
+        transform: scale(1); }
+    50% { 
+        opacity: 1;
+        transform: scale(1.5); }
+    100% { 
+        opacity: 0.3;
+        transform: scale(1); }
+}
